@@ -6,3 +6,19 @@
     margin-bottom: 20px;
     margin-top: 20px;
 }
+
+.box_img {
+    width: 90%;
+    height: 200px;
+    background-color: turquoise;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
