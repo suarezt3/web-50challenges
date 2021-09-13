@@ -1,5 +1,8 @@
 .card_challenges {
+    font-family: Ubuntu, Arial, Helvetica, sans-serif;
     width: 250px;
     height: 250px;
     background-color: yellowgreen;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
