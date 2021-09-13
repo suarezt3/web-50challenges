@@ -1,9 +1,12 @@
 import './App.css';
+import { BoxProjects } from './components/BoxProjects/BoxProjects';
+import { Header } from './components/Header/Header';
 
 function App() {
   return (
     <div className="App">
-    <h1>Hola</h1>
+    <Header />
+    <BoxProjects />
     </div>
   );
 }
