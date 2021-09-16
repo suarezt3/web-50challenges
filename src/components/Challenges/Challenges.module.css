@@ -2,23 +2,60 @@
     font-family: Ubuntu, Arial, Helvetica, sans-serif;
     width: 250px;
     height: 250px;
-    background-color: yellowgreen;
+    background-color: rgb(57, 57, 93);
     margin-bottom: 20px;
     margin-top: 20px;
+    margin-right: 10px;
 }
 
 .box_img {
-    width: 90%;
-    height: 200px;
-    background-color: turquoise;
+    width: 75%;
+    height: 170px;
+    background-color: rgb(23, 24, 42);
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-button {
-    display: block;
+.img {
+    width: 100%;
+    height: 170px;
+}
+
+.title {
     margin-left: auto;
     margin-right: auto;
+    width: 90%;
+    background-color: yellowgreen;
+    text-align: center;
+    font-weight: 700;
+}
+
+a {
+    font-family: Ubuntu, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+button {
+    position: relative;
+    bottom: 5px;
+    display: block;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: salta;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes salta {
+    0%{background-color: yellowgreen;}
+    25%{background-color: rebeccapurple;}
+    50%{background-color: steelblue;}
+    75%{background-color: snow;}
+    100%{background-color: chartreuse;}
 }

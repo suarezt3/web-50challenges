@@ -1,13 +1,17 @@
 import React from 'react';
 import style from './Challenges.module.css'
 
-export const Challenges = () => {
+export const Challenges = ({name, link, imagen}) => {
+
+    
+
     return (
         <div className={style.card_challenges}>
             <div className={style.box_img}>
-                <img src="" alt="" />
+                <img className={style.img} src={imagen} alt="" />
             </div>
-            <button type="button"> <a href="https://reto-1-expanding-cards.netlify.app/" target="blank">Ver como funciona</a> </button>
+            <p className={style.title}>{name}</p>
+            <button type="button"> <a href={link} target="blank">Play</a> </button>
         </div>
     )
 }
