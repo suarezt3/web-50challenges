@@ -1,7 +1,29 @@
+@import url('https://css.gg/search-loading.css');
+
 .header {
     width: 100%;
-    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-weight: 900;
     font-family: Ubuntu, Arial, Helvetica, sans-serif;
     color: #3C8DAD;
-    text-align: center;
+}
+
+.search {
+    margin-left: 30px;
+}
+
+.text_search {
+    font-family: Ubuntu, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.text_search i {
+    margin-left: 5px;
+    color: rgba(0, 0, 0, 0.5);
 }

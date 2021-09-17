@@ -2,11 +2,23 @@
     font-family: Ubuntu, Arial, Helvetica, sans-serif;
     width: 250px;
     height: 250px;
-    background-color: rgb(57, 57, 93);
+    background-color: rgba(255, 255, 255, 0.05);
     margin-bottom: 20px;
     margin-top: 20px;
     margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 15px 5px;
+    animation-name: rotar;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
+
+@keyframes rotar {
+    0%{box-shadow: rgb(255, 255, 255) 0px 0px 5px 1px;}
+    50%{box-shadow: rgb(0, 0, 0) 0px 0px 5px 1px;}
+    100%{box-shadow: rgb(255, 255, 255) 0px 0px 5px 1px;}
+} 
 
 .box_img {
     width: 75%;
@@ -21,28 +33,42 @@
 .img {
     width: 100%;
     height: 170px;
+    border-radius: 5px;
 }
 
 .title {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    background-color: yellowgreen;
+    background-color: rgb(255, 255, 255);
     text-align: center;
     font-weight: 700;
+    border-radius: 0px 50px;
 }
 
 a {
     font-family: Ubuntu, Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-weight: 700;
+    color: rgb(0, 0, 0);
+    animation-name: cambio;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
 }
+
+/* @keyframes cambio {
+    0%{color: rgb(0, 0, 0);}
+    50%{color: rgb(16, 0, 246);}
+    100%{color: rgb(251, 255, 0);}
+} */
+
 
 button {
     position: relative;
+    border: none;
     bottom: 5px;
     display: block;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
@@ -52,10 +78,8 @@ button {
 
 }
 
-@keyframes salta {
-    0%{background-color: yellowgreen;}
-    25%{background-color: rebeccapurple;}
-    50%{background-color: steelblue;}
-    75%{background-color: snow;}
-    100%{background-color: chartreuse;}
-}
+/* @keyframes salta {
+    0%{background-color: rgb(255, 255, 255);}
+    50%{background-color: rgb(0, 0, 0);}
+    100%{background-color: rgb(255, 255, 255);}
+} */
